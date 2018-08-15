@@ -1,4 +1,5 @@
-# book_author
+# belongs_to
+> belongs_to 关联创建两个模型之间一对一的关系，声明所在的模型实例属于另一个模型的实例
 
 ## generator model:
 ```shell
