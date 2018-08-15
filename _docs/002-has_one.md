@@ -8,5 +8,22 @@
 ## create model:
 ```shell
 rails g model supplier name:string
-rails g account supplier:references account_number:string
+rails g model account supplier:references account_number:string
+rake db:migrate
+```
+
+## rails console
+```rb
+s1 = Supplier.new
+s1.name = "FEI";
+s1.save
+
+a1 = Account.new
+a1.supplier = s1;
+a1.account_number = '001'
+a1.save
+
+## console get account OR supplier
+s1.account
+a1.supplier
 ```
